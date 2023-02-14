@@ -74,8 +74,6 @@ def get_similarity(clean, d1_cols, d2_cols, measure_id, row):
             return 2 * len(common_tokens)/(len(tokens1) + len(tokens2))
         elif (measure_id == 2):    
             return len(common_tokens)/(len(tokens1) + len(tokens2) - len(common_tokens))
-        elif (measure_id == 3):    
-            return len(common_tokens)
         
     return 0
 
